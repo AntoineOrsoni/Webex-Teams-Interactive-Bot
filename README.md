@@ -1,5 +1,5 @@
-# Netconf-Yang-Webex-Teams
-Getting operational data on a remote IOS XE device using NETCONF Yang, and posting the output in Webex Teams.
+# Webex-Teams-Interactive-Bot
+Basic interactive bot for Webex Teams.
 
 ## Getting started
 ### Setup
@@ -23,6 +23,10 @@ Don't forget to edit the `./core/variables.py` file with your bot token.
 ### Launching the bot
 Then, execute the `./core/main.py` file.
 
+### Capabilities
+
+Capabilities of the bot are listed in the `./core/bot_capabilities.py` file.
+
 ## Tools
 In order to facilite the creation and deletion of webhooks, two scripts can be executed. Both files are in `./webhooks_tools/`.
 * `post_webhooks` will post two webhooks. One for when the bot is mentioned, one for when the bot is added to a room.
@@ -36,4 +40,4 @@ In order to facilite the creation and deletion of webhooks, two scripts can be e
 
 Listing the interfaces with their configuration data.
 
-![Interfaces configuration data](https://i.imgur.com/b8w4tCSl.png)
+![Listing the capabilities](https://i.imgur.com/G7wlb1ql.png)
