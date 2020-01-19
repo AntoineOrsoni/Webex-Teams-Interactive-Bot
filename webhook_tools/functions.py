@@ -18,6 +18,10 @@ def get_person_id(token):
 
 # create a webhook for the bot mentions
 def create_webhook_new_message(webhook_url, token):
+    # if the last character is a /, removes it
+    if webhook_url[-1] == "/":
+        webhook_url = webhook_url[0:len(webhook_url)-1]
+
     # create request body
     payload_new_message = {
         "resource": "messages",
@@ -45,6 +49,10 @@ def create_webhook_new_message(webhook_url, token):
 
 # create a webhook when a bot is added to a room
 def create_webhook_new_room(webhook_url, token):
+    # if the last character is a /, removes it
+    if webhook_url[-1] == "/":
+        webhook_url = webhook_url[0:len(webhook_url) - 1]
+
     # create request body
     payload_new_message = {
         "resource": "memberships",
