@@ -47,6 +47,12 @@ In order to facilite the creation and deletion of webhooks, two scripts can be e
 
 ## Webhooks tools
 
+### Webex Teams webhooks
+
+A webhook is an HTTP callback, or an HTTP POST, to a specified URL that notifies your app when a particular activity or “event” has occurred in one of your resources on the Webex Teams platform. The benefit of using webhooks is that they allow your application to receive real-time data from Webex Teams, so you can keep up with the state of your resources (i.e. rooms, messages, memberships, etc.).
+
+[More information about Webex Teams wehbooks](https://developer.webex.com/docs/api/guides/webhooks)
+
 ### post_webhooks.py
 Post Webhooks for when my bot is mentioned, and when my bot is added to a new room.
 * mentioned will be sent to `{URL}/newmessage`
@@ -63,7 +69,6 @@ Usage: `delete_webhooks.py [-h] -t TOKEN`
 
 ### function.py
 Set of functions used by the files in this folder.
-
 
 ## Editing the variables
 Don't forget to edit the `./core/variables.py` file with your bot token.
