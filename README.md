@@ -1,6 +1,16 @@
 # Webex-Teams-Interactive-Bot
 Basic interactive bot for Webex Teams.
 
+## Webex Teams bots
+
+Bots are similar to regular Webex Teams users. They can participate in 1-to-1 and group spaces and users can message them directly or add them to a group space. A special badge is added to a bot's avatar in the Webex Teams clients so users know they're interacting with a bot instead of a human.
+
+A bot can only access messages sent to it directly. In group spaces, bots must be @mentioned to access the message. In 1-to-1 spaces, a bot has access to all messages from the user.
+
+Bots do not, however, perform actions within Webex Teams on behalf of a Webex Teams user.
+
+[More information about bots](https://developer.webex.com/docs/bots)
+
 ## Getting started
 
 ### Creating a Virtual env and install the required packages.
